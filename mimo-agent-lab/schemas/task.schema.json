@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dashiren666-source/nuwa-skill/mimo-agent-lab/schemas/task.schema.json",
+  "title": "MiMo Agent Lab Benchmark Task",
+  "type": "object",
+  "required": ["id", "family", "language", "goal", "inputs", "expected_outputs", "evaluation"],
+  "properties": {
+    "id": { "type": "string" },
+    "family": {
+      "type": "string",
+      "enum": ["codebase_reading", "bug_localization", "patch_planning", "test_generation", "pr_review", "documentation"]
+    },
+    "language": { "type": "string", "enum": ["zh-CN", "en"] },
+    "goal": { "type": "string" },
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "repository": { "type": "string" },
+        "files": { "type": "array", "items": { "type": "string" } },
+        "logs": { "type": "array", "items": { "type": "string" } },
+        "diff": { "type": "string" },
+        "user_request": { "type": "string" }
+      }
+    },
+    "expected_outputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evaluation": {
+      "type": "object",
+      "properties": {
+        "criteria": { "type": "array", "items": { "type": "string" } },
+        "max_score": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "token_estimate": {
+      "type": "object",
+      "properties": {
+        "input_tokens": { "type": "integer" },
+        "output_tokens": { "type": "integer" },
+        "rounds": { "type": "integer" }
+      }
+    }
+  }
+}
