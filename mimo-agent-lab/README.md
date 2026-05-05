@@ -2,11 +2,20 @@
 
 MiMo Agent Lab is a planned AI coding-agent evaluation and workflow platform for Chinese developers. The project is designed to evaluate how large language models perform on realistic software engineering tasks, especially in Chinese-language requirements, long-context code understanding, bug fixing, test generation, PR review, and technical documentation.
 
-This page is a truthful project-plan supplement for the Xiaomi MiMo Orbit 100T creator application. It describes the intended system design, benchmark scope, and expected token usage. It does not claim that the platform is already deployed in production.
+This page is a truthful project-plan supplement for the Xiaomi MiMo Orbit 100T creator application. It describes the intended system design, benchmark scope, expected token usage, sample benchmark tasks, and prototype scaffold. It does not claim that the platform is already deployed in production.
+
+## Application Materials
+
+- [Benchmark plan](docs/benchmark-plan.md)
+- [Token usage plan](docs/token-usage-plan.md)
+- [Benchmark task schema](schemas/task.schema.json)
+- [Bugfix sample task](examples/tasks/bugfix-task-001.md)
+- [PR review sample task](examples/tasks/pr-review-task-001.md)
+- [Prototype workflow scaffold](prototype/README.md)
 
 ## Core Problem
 
-Chinese developers increasingly use coding agents such as OpenClaw, Claude Code, Codex, OpenCode, Cursor, Windsurf, Aider, and Cline. However, many workflows are still difficult to evaluate consistently:
+Chinese developers increasingly use coding agents such as OpenClaw, Claude Code, Codex, OpenCode, Cursor, Windsurf, Aider, KiloCode, Hermes Agent, and Cline. However, many workflows are still difficult to evaluate consistently:
 
 - Whether an agent truly understands a multi-file codebase.
 - Whether a proposed fix passes tests and matches the user's requirement.
@@ -59,6 +68,8 @@ Expected early-stage usage:
 - Repeated runs for prompt comparison, model comparison, and regression tracking.
 - Potential monthly usage in the tens of millions to hundreds of millions of tokens during benchmark experiments.
 
+See [Token usage plan](docs/token-usage-plan.md) for the detailed estimate.
+
 ## Expected Deliverables
 
 If sufficient MiMo API credits are granted, the project will prioritize:
@@ -71,6 +82,6 @@ If sufficient MiMo API credits are granted, the project will prioritize:
 
 ## Current Status
 
-The project is currently in planning and prototype design. The first phase will focus on defining task schemas, collecting representative Chinese development tasks, and building a minimal MiMo-powered workflow demo.
+The project is currently in planning and prototype design. This repository now includes the initial benchmark plan, token usage plan, task schema, two sample benchmark tasks, and a minimal Python workflow scaffold. The first implementation phase will focus on defining task schemas, collecting representative Chinese development tasks, and building a MiMo-powered workflow demo.
 
 Applicant email for the current MiMo Orbit application: `1278204760@qq.com`.
