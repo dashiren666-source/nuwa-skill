@@ -4,8 +4,11 @@ MiMo Agent Lab is a planned AI coding-agent evaluation and workflow platform for
 
 This page is a truthful project-plan supplement for the Xiaomi MiMo Orbit 100T creator application. It describes the intended system design, benchmark scope, expected token usage, sample benchmark tasks, and prototype scaffold. It does not claim that the platform is already deployed in production.
 
+![MiMo Agent Lab proof diagram](assets/proof.svg)
+
 ## Application Materials
 
+- [Proof diagram](assets/proof.svg)
 - [Benchmark plan](docs/benchmark-plan.md)
 - [Token usage plan](docs/token-usage-plan.md)
 - [Benchmark task schema](schemas/task.schema.json)
@@ -82,6 +85,6 @@ If sufficient MiMo API credits are granted, the project will prioritize:
 
 ## Current Status
 
-The project is currently in planning and prototype design. This repository now includes the initial benchmark plan, token usage plan, task schema, two sample benchmark tasks, and a minimal Python workflow scaffold. The first implementation phase will focus on defining task schemas, collecting representative Chinese development tasks, and building a MiMo-powered workflow demo.
+The project is currently in planning and prototype design. This repository now includes the initial benchmark plan, token usage plan, task schema, two sample benchmark tasks, a proof diagram, and a minimal Python workflow scaffold. The first implementation phase will focus on defining task schemas, collecting representative Chinese development tasks, and building a MiMo-powered workflow demo.
 
 Applicant email for the current MiMo Orbit application: `1278204760@qq.com`.
