@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+  <rect width="1600" height="980" fill="#faf8f2"/>
+  <style>
+    .title{font:700 54px Arial, sans-serif;fill:#202020}.sub{font:24px Arial, sans-serif;fill:#555}.h{font:700 28px Arial, sans-serif;fill:#202020}.b{font:22px Arial, sans-serif;fill:#555}.mono{font:20px Consolas, monospace;fill:#fff}.small{font:18px Arial, sans-serif;fill:#666}.box{fill:#fff;stroke:#d0cabf;stroke-width:2}.accent{fill:#ff691e}.green{fill:#207e5c}
+  </style>
+  <text x="70" y="82" class="title">MiMo Agent Lab</text>
+  <text x="72" y="126" class="sub">Chinese AI coding-agent benchmark and workflow platform</text>
+  <text x="72" y="160" class="small">GitHub: github.com/dashiren666-source/nuwa-skill/tree/main/mimo-agent-lab</text>
+  <rect x="70" y="190" width="440" height="205" rx="18" class="box"/>
+  <text x="100" y="240" class="h">1. Context Input</text>
+  <text x="100" y="284" class="b">Repositories, code snippets,</text>
+  <text x="100" y="318" class="b">issues, logs, test results,</text>
+  <text x="100" y="352" class="b">and Chinese requirements.</text>
+  <rect x="580" y="190" width="440" height="205" rx="18" class="box"/>
+  <text x="610" y="240" class="h">2. Multi-Agent Flow</text>
+  <text x="610" y="284" class="b">Context analysis, planning,</text>
+  <text x="610" y="318" class="b">patch proposal, test strategy,</text>
+  <text x="610" y="352" class="b">review, and Chinese report.</text>
+  <rect x="1090" y="190" width="440" height="205" rx="18" class="box"/>
+  <text x="1120" y="240" class="h">3. Benchmark Output</text>
+  <text x="1120" y="284" class="b">Run records, review findings,</text>
+  <text x="1120" y="318" class="b">task samples, usage reports,</text>
+  <text x="1120" y="352" class="b">and reproducible evaluations.</text>
+  <text x="530" y="315" font-size="48" fill="#ff691e">→</text>
+  <text x="1040" y="315" font-size="48" fill="#ff691e">→</text>
+  <rect x="70" y="450" width="700" height="220" rx="18" class="box"/>
+  <text x="100" y="500" class="h">Repository Materials Added</text>
+  <text x="100" y="544" class="b">README, benchmark plan, token usage plan,</text>
+  <text x="100" y="578" class="b">task schema, bugfix task, PR-review task,</text>
+  <text x="100" y="612" class="b">and a Python workflow prototype scaffold.</text>
+  <rect x="830" y="450" width="700" height="220" rx="18" class="box"/>
+  <text x="860" y="500" class="h">High Token Usage Rationale</text>
+  <text x="860" y="544" class="b">100-300 Chinese software-engineering tasks.</text>
+  <text x="860" y="578" class="b">100k-500k tokens per full task run.</text>
+  <text x="860" y="612" class="b">Multi-prompt, multi-model, multi-round evaluation.</text>
+  <rect x="70" y="725" width="1460" height="170" rx="16" fill="#1e1f23"/>
+  <text x="100" y="770" class="mono">&gt; python prototype/workflow.py</text>
+  <text x="100" y="810" class="mono">{ task_id: bugfix-task-001, model_family: mimo-series, prompt_version: v0.1-plan,</text>
+  <text x="100" y="850" class="mono">  stages: [context_analysis, planning, patch_proposal, test_strategy, review, report],</text>
+  <text x="100" y="890" class="mono">  notes: code-grounded evidence, Chinese PR review, reproducible benchmark record }</text>
+  <text x="72" y="940" class="small">Truthful planning/prototype proof. It does not claim production deployment, paid usage, or existing user traffic.</text>
+</svg>
